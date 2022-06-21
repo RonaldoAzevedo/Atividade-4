@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".CadastroProduto">
+
+        <EditText
+            android:id="@+id/nomeItem"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:hint="Nome"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/descricaoItem"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Descrição"
+            app:layout_constraintEnd_toEndOf="@id/nomeItem"
+            app:layout_constraintStart_toStartOf="@id/nomeItem"
+            app:layout_constraintTop_toBottomOf="@id/nomeItem" />
+
+        <EditText
+            android:id="@+id/valorItem"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Valor"
+            android:inputType="numberDecimal"
+            app:layout_constraintEnd_toEndOf="@id/descricaoItem"
+            app:layout_constraintStart_toStartOf="@id/descricaoItem"
+            app:layout_constraintTop_toBottomOf="@id/descricaoItem" />
+
+        <Button
+            android:id="@+id/botaoSalvar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="salvar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.1"
+            app:layout_constraintStart_toStartOf="@id/valorItem" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
